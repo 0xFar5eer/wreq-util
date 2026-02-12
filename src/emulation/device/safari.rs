@@ -135,6 +135,13 @@ mod_generator!(
 );
 
 mod_generator!(
+    safari17_6,
+    safari17_0::build_emulation,
+    header_initializer_for_16_17,
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15"
+);
+
+mod_generator!(
     safari_ios_17_2,
     tls_options!(1, CIPHER_LIST_2),
     http2_options!(2),
@@ -221,4 +228,32 @@ mod_generator!(
     safari26::build_emulation,
     header_initializer_for_18,
     "Mozilla/5.0 (iPhone; CPU iPhone OS 26_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1"
+);
+
+mod_generator!(
+    safari26_1,
+    safari18_5::build_emulation,
+    header_initializer_for_18,
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.1 Safari/605.1.15"
+);
+
+mod_generator!(
+    safari_ios_26_2,
+    safari26::build_emulation,
+    header_initializer_for_18,
+    "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.2 Mobile/15E148 Safari/604.1"
+);
+
+mod_generator!(
+    safari26_2,
+    safari18_5::build_emulation,
+    header_initializer_for_18,
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.2 Safari/605.1.15"
+);
+
+mod_generator!(
+    safari_ipad_26_2,
+    safari26::build_emulation,
+    header_initializer_for_18,
+    "Mozilla/5.0 (iPad; CPU OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.2 Mobile/15E148 Safari/604.1"
 );
